@@ -6,11 +6,16 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
-function getTodoTopics(todos) {
+function getTodoTopics(task) {
   // Start coding here
+  let newTopic = [];
+  todos.map((task) => newTopic.push(task.topic));
+  return newTopic;
 }
 
 getTodoTopics(todos);
+
+console.log(getTodoTopics(todos));
 
 /* 
 	Output:
